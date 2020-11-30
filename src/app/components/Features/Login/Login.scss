@@ -1,0 +1,109 @@
+.login {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+
+  .login__logo {
+    width: 100px;
+    object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .login__error {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: fit-content;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #c40000;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #fcf4f4 inset;
+    .login__errorHeading {
+      display: flex;
+      align-items: center;
+
+      .login__errorHeadingIcon {
+        color: #c40000;
+        font-size: 2rem;
+      }
+      .login__errorHeadingText {
+        color: #c40000;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.255;
+        margin-left: 20px;
+      }
+    }
+    .login__errorText {
+      margin-left: 55px;
+      font-size: 13px;
+    }
+  }
+  .login__container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid lightgray;
+    height: fit-content;
+    border-radius: 3px;
+
+    h1 {
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    form {
+      h5 {
+        margin-bottom: 5px;
+      }
+      input {
+        margin-bottom: 10px;
+        background-color: white;
+        width: 98%;
+        height: 30px;
+        border: 1px solid #a6a6a6;
+        border-top-color: #949494;
+        border-radius: 3px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+          0 1px 0 rgba(0, 0, 0, 0.07) inset;
+        outline: 0;
+      }
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+
+    .login__signInButton {
+      background-color: #f0c14b;
+      border: 1px solid;
+      margin-top: 10px;
+      border-color: #a88734 #9c7e31 #846a29;
+      outline: none;
+      width: 100%;
+      height: 30px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .login__registerButton {
+      border: 1px solid;
+      margin-top: 10px;
+      border-color: darkgray;
+      outline: none;
+      width: 100%;
+      height: 30px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+}
